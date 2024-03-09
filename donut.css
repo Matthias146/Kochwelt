@@ -31,7 +31,9 @@
 .mainContent {
   display: flex;
   justify-content: center;
-  margin: 0 120px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 80px;
 }
 
 .icons {
@@ -62,6 +64,11 @@ td {
   padding: 16px 0;
   text-align: left;
   border-radius: 12px;
+}
+
+.tdText {
+  font-size: 20px;
+  padding-left: 16px;
 }
 
 tr:nth-child(odd) {
@@ -98,5 +105,28 @@ tr:nth-child(odd) {
 .cookingTime {
   display: flex;
   justify-content: center;
-  margin: 0 120px;
+  margin-left: 120px;
+  margin-right: 120px;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.cooking p {
+  font-size: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.profile span {
+  font-size: 24px;
 }

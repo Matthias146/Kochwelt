@@ -1,37 +1,37 @@
 let donut = [
     {
-        amount: 750,
+        amount: 375,
         value: 'g',
         name: 'Weizenmehl'
 
     },
     {
-        amount: 2,
+        amount: 1,
         value: ' Pkt.',
         name: 'Trockenhefe'
     },
     {
-        amount: 300,
+        amount: 150,
         value: 'g',
         name: 'Milch'
     },
     {
-        amount: 100,
+        amount: 50,
         value: 'g',
         name: 'Zucker'
     },
     {
-        amount: 120,
+        amount: 60,
         value: 'g',
         name: 'Butter'
     },
     {
-        amount: 2,
+        amount: 1,
         value: '',
         name: 'Ei(er)'
     },
     {
-        amount: 2,
+        amount: 1,
         value: ' Prise(n)',
         name: 'Salz'
     },
@@ -50,15 +50,79 @@ function renderDonut() {
     <div class="icons"><img src="/img/icons/calendar-alt-regular.svg"><span>14.06.2016</span></div>
     </div>
     <div>
-    <form class="form" type="submit">
+    <form class="form" type="submit" onsubmit="renderIncrement(); return false">
     <label>Zutaten für</label>
-    <input class="input" type="number" min="1" max="6" value="1">
-    <button class="btn-form">Portionen</button>
+    <input class="input" id="input" type="number" min="1" max="6" value="1">
+    <button class="btn-form" type="submit">Portionen</button>
     </form>
     </div>
     </div>`
     renderTable();
     cookingTime();
+}
+
+function renderIncrement() {
+    let input = document.getElementById('input').value;
+    if (input == 2) {
+        let donutMenu = document.getElementById('tbl');
+        donutMenu.innerHTML = '';
+        for (i = 0; i < donut.length; i++) {
+            const donuts = donut[i];
+            donutMenu.innerHTML += `
+            <tr>
+                <td class="tdText" id="tdText">${donuts['amount'] * 2}${donuts['value']} ${donuts['name']}</td>
+            </tr>
+            `
+        }
+    } else if (input == 3) {
+        let donutMenu = document.getElementById('tbl');
+        donutMenu.innerHTML = '';
+        for (i = 0; i < donut.length; i++) {
+            const donuts = donut[i];
+            donutMenu.innerHTML += `
+            <tr>
+                <td class="tdText" id="tdText">${donuts['amount'] * 3}${donuts['value']} ${donuts['name']}</td>
+            </tr>
+            `
+        }
+
+    } else if (input == 4) {
+        let donutMenu = document.getElementById('tbl');
+        donutMenu.innerHTML = '';
+        for (i = 0; i < donut.length; i++) {
+            const donuts = donut[i];
+            donutMenu.innerHTML += `
+            <tr>
+                <td class="tdText" id="tdText">${donuts['amount'] * 4}${donuts['value']} ${donuts['name']}</td>
+            </tr>
+            `
+        }
+
+    } else if (input == 5) {
+        let donutMenu = document.getElementById('tbl');
+        donutMenu.innerHTML = '';
+        for (i = 0; i < donut.length; i++) {
+            const donuts = donut[i];
+            donutMenu.innerHTML += `
+            <tr>
+                <td class="tdText" id="tdText">${donuts['amount'] * 5}${donuts['value']} ${donuts['name']}</td>
+            </tr>
+            `
+        }
+
+    } else if (input == 6) {
+        let donutMenu = document.getElementById('tbl');
+        donutMenu.innerHTML = '';
+        for (i = 0; i < donut.length; i++) {
+            const donuts = donut[i];
+            donutMenu.innerHTML += `
+            <tr>
+                <td class="tdText" id="tdText">${donuts['amount'] * 6}${donuts['value']} ${donuts['name']}</td>
+            </tr>
+            `
+        }
+    }
+
 }
 
 function renderTable() {
@@ -68,11 +132,12 @@ function renderTable() {
         const donuts = donut[i];
         donutMenu.innerHTML += `
             <tr>
-                <td>${donuts['amount']}${donuts['value']} ${donuts['name']}</td>
+                <td class="tdText" id="tdText">${donuts['amount']}${donuts['value']} ${donuts['name']}</td>
             </tr>
             `
     }
 }
+
 
 function cookingTime() {
     document.getElementById('cookingTime').innerHTML = `
@@ -105,5 +170,11 @@ function cookingTime() {
         Gläser oder Plätzchen-Ausstecher.
        </p>
     </div>
+            <div class="end">
+            <h3>Rezept erstellt von</h3>
+            <div class="profile">
+            <img src="/img/profile.png"><span>Matthias Hammelehle</span>
+            </div>
+            </div>
     `
 }
