@@ -1,0 +1,102 @@
+.body {
+  margin: 0;
+  font-family: Raleway;
+}
+
+.donutImg img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donutContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  margin: 0 120px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 24px;
+  margin-top: 16px;
+  margin-right: 8px;
+  padding: 8px;
+  border-radius: 32px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.icons img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.tableContent {
+  margin-top: 32px;
+}
+
+table,
+td {
+  width: 100%;
+  padding: 16px 0;
+  text-align: left;
+  border-radius: 12px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(213, 206, 206, 0.3);
+}
+
+.form {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  width: 500px;
+  font-size: 24px;
+  padding: 0;
+}
+
+.btn-form {
+  border: unset;
+  background-color: green;
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  cursor: pointer;
+  padding: 8px 16px;
+  width: 180px;
+}
+
+.input {
+  font-size: 24px;
+  padding: 8px 8px;
+  width: 180px;
+  border: unset;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.cookingTime {
+  display: flex;
+  justify-content: center;
+  margin: 0 120px;
+}
