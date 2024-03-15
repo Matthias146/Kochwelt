@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donuts</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+   <link rel="stylesheet" href="../styles/donut.css">
+    <script src="../scripts/donut.js"></script> 
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="../site/header.html"></div>
+    <div class="site">
+
+
+        <section class="recipeinfo">
+            <h1>Donuts</h1>
+            <div class="imagecantainer"></div>
+            <div class="coockingdata">
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">30 Min</div>
+                <div class="coockdataicons"><img src="../img/icons/brain-solid.svg" alt="">simpel</div>
+                <div class="coockdataicons"><img src="../img/icons/calendar-alt-regular.svg" alt="">05.03.2024</div>
+            </div>
+            <div class="separator"></div>
+        </section>
+
+        <section class="recipe">
+            <div class="servings"><span>Zutaten für</span></span></div>
+            <div class="input"><input class="inputfield" id="inputfield" type="number" value="1" min="1" max="6"></div>
+            <div><button class="servingsbutton" id="servingsbutton" onclick="renderIncrement()">Portionen</button></div>
+
+        </section>
+
+        <section class="ingredients">
+            <table id="table">
+              <tbody id="tbl"></tbody>
+            </table>
+        </section>
+
+        <section class="description">
+            <h2>Zubereitung</h2>
+            <div class="coockingdata">
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">30 Minuten</div>
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 45 Minuten
+                </div>
+            </div>
+            <span>
+                <h3>Donuts zubereiten</h3>
+                            In einem Topf die Milch erwärmen und die Butter darin schmelzen. Mehl und Trockenhefe in einer Schüssel vermengen und die übrigen Zutaten sowie die warme Milch-Butter-Mischung hinzugeben. Alles mit den Knethaken eines Mixers oder der Küchenmaschine ca. 5 Min. zu einem glatten Teig kneten. Anschließend an einem warmen Ort für mind. 30 Min. gehen lassen. Den Teig auf einer bemehlten Arbeitsplatte mit den Händen durchkneten und gut 1 cm dick ausrollen. Mit einem Donut-Ausstecher (8 - 9 cm) Teigstücke ausstechen. Diese erneut ca. 30 Min. gehen lassen. Um die Donuts ausbacken zu können, muss Pflanzenöl in einem Topf auf etwa 180 °C erhitzt werden. Ob die Temperatur erreicht ist, sieht man, wenn man einen Holzstiel in das Öl hält und sich Bläschen daran bilden. Die Donuts werden in dem heißen Öl von beiden Seiten je 2 Min. ausgebacken. Mit einer Schaumkelle herausnehmen und auf Küchenkrepp abtropfen lassen. Die fertigen Donuts entweder in gesiebtem Puderzucker wälzen oder in eine Glasur aus Milch und Puderzucker dippen und mit Zuckerperlen bestreuen. Tipp: Die Donuts können auch mit Butter bestrichen im Backofen bei 200 °C Ober-/Unterhitze 15 Min. gebacken werden. Wer keine Donut-Ausstecher zur Hand hat, nimmt einfach zwei unterschiedlich große Gläser oder Plätzchen-Ausstecher.
+
+            </span>
+        </section>
+        <section class="profilecontainer">
+            <h4>Rezept erstellt durch</h4>
+            <div class="profile"><img class="profileimage" src="../img/me.jpg" alt="profileimage"> Matthias</div>
+        </section>
+
+        <div w3-include-html="../site/footer.html"></div>
+    </div>
+</body>
+
+</html>

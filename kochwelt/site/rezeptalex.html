@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hähnchen-Gemüse-Reispfanne</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../styles/rezept.css">
+    <script src="../scripts/script.js"></script>
+</head>
+
+<body onload="includeHTML(), load()">
+    <div w3-include-html="header.html"></div>
+    <div class="site">
+
+
+        <section class="recipeinfo">
+            <h1>Hähnchen-Gemüse-Reispfanne</h1>
+            <div class="imagecantainer"></div>
+            <div class="coockingdata">
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">30 Min</div>
+                <div class="coockdataicons"><img src="../img/icons/brain-solid.svg" alt="">simpel</div>
+                <div class="coockdataicons"><img src="../img/icons/calendar-alt-regular.svg" alt="">05.03.2024</div>
+            </div>
+            <div class="separator"></div>
+        </section>
+
+        <section class="recipe">
+            <div class="servings"><span>Zutaten für</span></span></div>
+            <div class="input"><input class="inputfield" id="inputfield" type="number" name="amount" min="1" max="10"
+                    placeholder="1"></div>
+            <div><button class="servingsbutton" id="servingsbutton" onclick="calculate()">Portionen</button></div>
+
+        </section>
+
+        <section class="ingredients">
+            <table id="table">
+
+            </table>
+        </section>
+
+        <section class="description">
+            <h2>Zubereitung</h2>
+            <div class="coockingdata">
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">30 Minuten</div>
+                <div class="coockdataicons"><img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 45 Minuten
+                </div>
+            </div>
+            <span>
+                <h3>Leichte Hähnchen-Gemüse-Reispfanne zubereiten</h3>
+                <h4>Schritt 1</h4>
+                Für die Hähnchen-Gemüse-Reispfanne den Reis im gesalzenen Wasser nach Packungsanleitung bissfest kochen.
+
+                <h4>Schritt 2</h4>
+                Währenddessen das Hähnchen trocken tupfen und in mundgerechte Stücke schneiden.
+
+                <h4>Schritt 3</h4>
+                Anschließend die Schalotte schälen und in feine Streifen schneiden. Nun die Paprika entkernen und
+                ebenfalls in Streifen schneiden.
+
+                <h4>Schritt 4</h4>
+                Danach Brokkoli, Bohnen und Mören putzen, in mundgerechte Stücke schneiden und in einem Topf mit
+                kochendem
+                Salzwasser ca. 3-5 Minuten vorkochen.
+
+                <h4>Schritt 5</h4>
+                Das Fleisch mit Olivenöl, Salz und Kurkuma in einer Schüssel marinieren. Danach in einer Pfanne scharf
+                anbraten. Anschließend die Schalotten- und Paprikastreifen dazugeben. Nun alles für ca. 5-10 Minuten
+                anbraten.
+
+                <h4>Schritt 6</h4>
+                Anschließend Brokkoli, Bohnen und die Möhren dazu geben etwa 5 Minuten mitbraten, mit Salz, Pfeffer und
+                Rosmarin würzen und mit Sojasoße
+                ablöschen.
+
+                <h4>Schritt 7</h4>
+                Den fertig gegarten Reis gut abtropfen lassen und mit in die Pfanne geben. Nun alles gut vermengen und
+                mit Salz und Pfeffer abschmecken. Dann kann die leichte Hähnchen-Gemüse-Reispfanne auch schon
+                angerichtet werden.
+            </span>
+
+        </section>
+        <section class="profilecontainer">
+            <h4>Rezept erstellt durch</h4>
+            <div class="profile"><img class="profileimage" src="../img/profile.jpg" alt="profileimage"> Alex</div>
+        </section>
+
+        <div w3-include-html="footer.html"></div>
+    </div>
+</body>
+
+</html>

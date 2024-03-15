@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/script.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <div class="body-width">
+      <div class="contact_form">
+        <form onsubmit="sendMail(event)" class="contact-form">
+          <div class="section-contact">
+            <div class="input-contact">
+              <label class="input-label">
+                Vorname
+                <br />
+                <input type="text" name="name" required />
+              </label>
+
+              <label class="input-label">
+                Nachname
+                <br />
+                <input type="text" name="surname" required />
+              </label>
+
+              <label class="input-label">
+                E-Mail-Adresse
+                <br />
+                <input type="email" name="email" required />
+              </label>
+            </div>
+
+            <div class="message">
+              <label class="message-label">
+                Deine Nachricht an uns:
+                <br />
+                <textarea
+                  name="Nachricht"
+                  required
+                  placeholder="Was ich schon immer sagen wollte..."
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <div>
+                <label class="checkbox-label">
+                  <input type="checkbox" required />Ich willige in die
+                  Datenschutzerklärung ein.</label
+                >
+              </div>
+            </div>
+
+            <button class="recipe-button" type="submit">
+              Nachricht senden
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+  </body>
+</html>

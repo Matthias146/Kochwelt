@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gnocchi</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/rezept.css" />
+    <script src="../scripts/script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <section class="recipeinfo">
+      <h1>Gnocchi</h1>
+      <div class="imagecantainer2"></div>
+      <div class="coockingdata">
+        <div class="coockdataicons">
+          <img src="../img/icons/clock-regular.svg" alt="" />30 Min
+        </div>
+        <div class="coockdataicons">
+          <img src="../img/icons/brain-solid.svg" alt="" />simpel
+        </div>
+        <div class="coockdataicons">
+          <img src="../img/icons/calendar-alt-regular.svg" alt="" />06.03.2024
+        </div>
+      </div>
+      <div class="separator"></div>
+    </section>
+
+    <section class="recipe">
+      <div class="servings"><span>Zutaten für</span></div>
+      <div class="input">
+        <input
+          class="inputfield"
+          id="inputfield"
+          type="number"
+          name="amount"
+          min="1"
+          max="10"
+          value="4"
+        />
+      </div>
+      <div>
+        <button class="servingsbutton" id="servingsbutton" onclick="gnocchi()">
+          Portionen
+        </button>
+      </div>
+    </section>
+
+    <section class="ingredients">
+      <table id="table">
+        <tr class="trgrey">
+          <td class="amount" id="1">800g</td>
+          <td>Gnocchi</td>
+        </tr>
+        <tr>
+          <td class="amount" id="2">4 große</td>
+          <td>Tomate(n)</td>
+        </tr>
+        <tr class="trgrey">
+          <td class="amount" id="3">2 Dose(n)</td>
+          <td>Tomaten, passierte</td>
+        </tr>
+        <tr>
+          <td class="amount" id="4">4 große</td>
+          <td>Zwiebeln</td>
+        </tr>
+        <tr class="trgrey">
+          <td class="amount" id="5">8</td>
+          <td>Knoblauchzehen</td>
+        </tr>
+        <tr>
+          <td class="amount" id="6">4EL</td>
+          <td>Öl</td>
+        </tr>
+        <tr class="trgrey">
+          <td class="amount"></td>
+          <td>Gewürze nach Wahl</td>
+        </tr>
+        <tr>
+          <td class="amount"></td>
+          <td>Basilikum, frischen</td>
+        </tr>
+        <tr class="trgrey">
+          <td class="amount"></td>
+          <td>Parmesan</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="description">
+      <h2>Zubereitung</h2>
+      <div class="coockingdata">
+        <div class="coockdataicons">
+          <img src="../img/icons/clock-regular.svg" alt="" />Vorbereitung ca. 15
+          Minuten
+        </div>
+        <div class="coockdataicons">
+          <img src="../img/icons/clock-regular.svg" alt="" />Kochzeit ca. 15
+          Minuten
+        </div>
+      </div>
+      <span>
+        Die Gnocchi nach Anweisung in reichlich Wasser vorkochen.
+        <br /><br />
+        Währenddessen die Zwiebeln und das Knochblauch würfeln und in einer
+        heißen Pfanne mit etwas Öl scharf anbraten. Daraufhin die passierten und
+        frisch gewürfelten Tomaten hinzugeben und köcheln lassen. Nach Belieben
+        etwas Wasser hinzugeben, um die Konsistenz flüssiger zu machen. Die
+        Tomatensauce mit Salz, Pfeffer und Kräutern nach Wahl abschmecken. Zu
+        guter Letzt die Gnocchi in die Tomatensauce unterrühren.
+        <br /><br />
+        Zum Servieren die Gnocchi in einen Teller geben und mit etwas Parmesan
+        und Basilikum verfeinern.
+        <br />
+        Jetzt kann der Genuss beginnen!
+      </span>
+    </section>
+    <section class="profilecontainer">
+      <h4>Rezept erstellt durch</h4>
+      <div class="profile">
+        <img class="profileimage" src="../img/aylin.jpg" alt="profileimage" />
+        Aylin
+      </div>
+    </section>
+    <div w3-include-html="footer.html"></div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.ico">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/headerfooter.css">
+  <script src="./scripts/script.js"></script>
+</head>
+<div class="header">
+  <header>
+    <div class="topnavcontainer">
+      <div class="navigation"><a href="./home.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+        <img onclick="showMenu()" class="navbarmenu" src="./img/menu.png" alt="menu">
+        <nav id="menu" class="shownav, nav">
+          <a class="border" href="./home.html">Start</a>
+          <a class="border" href="./site/rezeptalex.html">Rezept des Tages</a>
+          <a class="border" href="./site/contact.html">Kontakt</a>
+          <a class="border" href="./site/impressum.html">Impressum</a>
+          <button onclick="closeMenu()">Close</button>
+        </nav>
+      </div>
+    </div>
+    <div class="separator"></div>
+  </header>
+</div>
+
+<body>
+
+  <section class="recipe-of-the-day">
+    <img src="./img/reispfanne.jpg" />
+    <div class="recipe-of-the-day-info">
+      <h2>Hähnchen-Gemüse-Reispfanne</h2>
+      <p>
+        Meine Reispfanne mit Hähnchen ist ein blitzschnelles und total einfaches Hauptgericht für die ganze Familie.
+        <br>
+        Vollgepackt
+        mit knackigem Gemüse schmeckt die Hähnchen-Reis-Pfanne einfach lecker
+      </p>
+      <a href="./site/rezeptalex.html">
+        <button class="recipe-button">Rezept öffnen</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="recipes">
+    <h2>Lust auf was Neues?</h2>
+    <div class="all-recipes">
+      <div class="recipe-link">
+        <a href="./site/gnocchi.html">
+          <img src="./img/gnocchi-link.jpg" />
+          <p>Gnocchi</p>
+        </a>
+      </div>
+      <div class="recipe-link">
+        <a href="./site/rezeptalex.html">
+          <img src="./img/reispfanne-link.jpg" />
+          <p>Reispfanne</p>
+        </a>
+      </div>
+      <div class="recipe-link">
+        <a href="./site/donut.html">
+          <img src="./img/donut-link.jpg" />
+          <p>Donuts</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra">
+    <h2>Schon gewusst?</h2>
+    <div class="extra-info">
+      <p>
+        Das älteste, bekannte Rezept ist für Bier und stammt aus dem Jahr
+        4500 v. Chr. Die alten Sumerer, die das Bier erfunden haben, waren
+        auch für die Entwicklung der ersten bekannten Form der Schrift, der sogenannten
+        Keilschrift, verantwortlich. Technisch gesehen wurde also die erste
+        Schriftsprache verwendet, um ein Bierrezept aufzuzeichnen. Das ist
+        ein Grund zum Anstoßen!
+      </p>
+      <img src="./img/beer.jpg" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="footercontainer">
+      <div class="footernavigation"><a href="./home.html"><img class="footerlogo" src="./img/logo_small.png"
+            alt="logo"></a>
+        <div>
+          <a class="border" href="./site/datenschutz.html">Datenschutz</a>
+          <a class="border" href="./site/contact.html">Kontakt</a>
+          <a class="border" href="./site/impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

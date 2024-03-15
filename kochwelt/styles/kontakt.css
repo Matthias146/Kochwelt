@@ -1,0 +1,37 @@
+.datenschutz {
+    margin: 30px;
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.email {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email input {
+    width: 300px;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea {
+    height: 200px;
+    width: 300px;
+}
+
+.kontakt button {
+    margin-bottom: 20px;
+}

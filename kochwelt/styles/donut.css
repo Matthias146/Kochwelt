@@ -1,0 +1,425 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Raleway';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/raleway/static/Raleway-Bold.ttf') format('truetype');
+}
+
+html,
+body {
+  margin: 0;
+  color: rgb(0, 0, 0, 0.8);
+  font-family: 'Raleway';
+  font-weight: normal;
+  height: 100%;
+}
+
+.site {
+  height: auto;
+  min-height: 100%;
+}
+
+footer {
+  background-color: rgb(81, 80, 80);
+  padding: 30px 80px;
+}
+
+.footercontainer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 100px; */
+  margin: auto;
+}
+
+.footernavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerlogo {
+  height: 100px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.footernavigation a {
+  color: white;
+  padding: 10px 30px;
+}
+
+h1 {
+  color: rgb(74, 73, 73);
+  font-size: 28px;
+}
+
+h2 {
+  margin-block-end: 0;
+  color: rgb(74, 73, 73);
+}
+
+h3 {
+  color: rgb(74, 73, 73);
+  font-size: 18px;
+}
+
+h4 {
+  color: rgb(74, 73, 73);
+}
+
+.topnavcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+  margin: auto;
+}
+
+.logo {
+  height: 100px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(74, 73, 73);
+  font-weight: 600;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: green;
+}
+
+.border {
+  position: relative;
+}
+
+.border:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0px;
+  border-bottom: 5px solid green;
+}
+
+.border:hover::after:active {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0px;
+  border-bottom: 5px solid green;
+}
+
+.separator {
+  height: 12px;
+  /* background-color: rgb(0, 0, 0, 0.1); */
+  /* padding-top: 1px;
+    margin-top: 8px; */
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipeinfo {
+  padding: 0px 100px;
+  margin: auto;
+}
+
+.imagecantainer {
+  background-image: url(../img/donut.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.imagecantainer2 {
+  background-image: url(../img/gnocchi.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.coockingdata {
+  display: flex;
+  gap: 16px;
+  padding-top: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.coockdataicons {
+  display: flex;
+  height: 30px;
+  gap: 8px;
+  background-color: rgb(0, 0, 0, 0.1);
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.coockdataicons img {
+  height: 14px;
+}
+
+.recipe {
+  padding: 0px 100px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+.servings {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding-right: 16px;
+}
+
+.input {
+  display: flex;
+  gap: 0;
+}
+
+.inputfield {
+  font-size: 16px;
+  width: 100px;
+  padding: 10px 0px 10px 8px;
+  box-sizing: border-box;
+  border: solid;
+  border-color: rgb(200, 200, 200);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-width: 1px;
+}
+
+.servingsbutton {
+  font-size: 16px;
+  width: 120px;
+  background-color: rgb(0, 128, 1);
+  color: white;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.servingsbutton:hover {
+  cursor: pointer;
+  background-color: rgba(0, 128, 1, 0.8);
+}
+
+.ingredients {
+  padding: 0px 100px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+tr {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 30px;
+}
+
+.amount {
+  width: 20%;
+  padding-left: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(239, 239, 239);
+  border-radius: 10px;
+}
+
+.description {
+  padding: 0px 100px;
+  margin: auto;
+}
+
+.profilecontainer {
+  padding: 0px 100px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.profileimage {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  margin-right: 36px;
+}
+
+@media (max-width: 980px) {
+  a {
+    font-size: 16px;
+    margin-inline: 40px;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footernavigation a {
+    font-size: 14px;
+    margin-inline: 40px;
+    padding: 10px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 690px) {
+  a {
+    font-size: 12px;
+    margin-inline: 40px;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .imagecantainer {
+    height: 300px;
+  }
+
+  .recipeinfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .coockdataicons {
+    height: 40px;
+  }
+
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  .input {
+    margin: 5px;
+  }
+
+  .inputfield {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .servingsbutton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .coockingdata {
+    flex-direction: column;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  a {
+    font-size: 14px;
+    margin-inline: 40px;
+    padding: 2px;
+    margin: 0px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnavcontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .border:hover::after {
+    border-bottom: 3px solid green;
+  }
+
+  .border:hover::after:active {
+    border-bottom: 3px solid green;
+  }
+}
+
+@media (max-width: 360px) {
+  .recipeinfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .coockingdata {
+    display: flex;
+    flex-direction: column;
+  }
+}
